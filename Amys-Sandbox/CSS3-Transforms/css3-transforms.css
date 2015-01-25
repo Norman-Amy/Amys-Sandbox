@@ -84,3 +84,60 @@ section {
 	-webkit-transform: translate3d(0, -1.5em, 0) scale3d(0.75, 0.75, 1);
 	transform: translate3d(0, -1.5em, 0) scale3d(0.75, 0.75, 1) translateZ(1px); /* translate3d(x position, y position, ?) scale3d(width of text, height, ?) */
 }
+
+
+.Amy {
+	vertical-align:top;
+	padding: 15px;
+	font-size:.8em;
+	height: 200px;
+}
+
+/* Note: the following won't work for internet explorer version 9 or earlier */
+div#hovering {
+    width: 100px;
+    height: 100px;
+    background: red;
+    -webkit-transition: width 1s, height 2s, -webkit-transform 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 1s, height 2s, transform 2s;
+}
+
+div#hovering:hover {
+    width: 150px;
+    height: 150px;
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+}
+
+button#jump {
+	float: left;
+	max-width: 30%;
+	-webkit-transition-property: float; /* Safari */
+    -webkit-transition-duration: 2s; /* Safari */
+    transition-property: float;
+    transition-duration: 2s;
+}
+
+button#jump:active {
+	float: right;
+	clear: bottom;
+}
+
+
+#radio {
+	padding: 15px;
+	-webkit-transition-property: background-color; /* Safari */
+    -webkit-transition-duration: 2s; /* Safari */
+    transition-property: background-color;
+    transition-duration: 2s;
+}
+
+/* Note: background colors don't change on radio buttons. */
+.Amy input#red:checked  ~ #radio {
+	background-color:red;
+}
+
+.Amy input#blue:checked ~ #radio {
+    background-color:blue;
+	
+}
