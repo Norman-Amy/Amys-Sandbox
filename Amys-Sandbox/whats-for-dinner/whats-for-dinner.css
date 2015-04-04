@@ -1,0 +1,246 @@
+body {
+	vertical-align:center;
+	font-family: verdana;
+	font-size: 12pt;
+	width: 80%;
+	margin: auto;
+	text-align:center;
+}
+
+main {
+	margin: 10px 0;
+	border: 3px dashed yellow;
+	border-radius: 10px;
+	width: 60%;
+}
+
+#content {
+	border: 3px solid red;
+	border-radius: 10px;
+	padding: 0 15px 15px 15px;
+	display:block;
+	overflow:hidden;
+}
+
+#dinnerplate{
+	position: relative;
+	float: left;
+	width: 40%;
+	margin: 2%;
+	top: 140px;
+}
+
+#mainMenu {
+	width: 45%;
+	position: relative;
+	float: left;
+	margin: 2%;
+	text-align:left;
+	padding-left: 15px;
+	padding-bottom: 15px;
+	left: 50px;
+}
+
+#mainMenu form {
+	padding: 10px 0 30px 0;
+}
+
+#mainMenu #remove, #currentMenu {
+	margin-left: 10px;
+}
+
+header {
+	text-align:left;
+}
+
+h1 {
+	background: orange;
+	margin-top: 0;
+	margin-bottom: 15px;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+h2, h3 {
+	margin-top: 10px;
+}
+
+input, select {
+	padding: 2px;
+	height: 30px;
+	min-width: 100px;
+	border-radius: 6px;
+}
+
+button {
+	border: 1px solid #D2D2D2;
+	border-radius: 6px;
+	padding: 10px;
+	margin-top: 10px;
+	font-family: tahoma;
+	min-width: 50px;
+}
+button:hover{
+	background-color: orange;
+	color: #000; 
+	-webkit-transition: background color 1.5s ease;
+  	-moz-transition: background color 1.5s ease;
+  	-o-transition: background color 1.5s ease;
+  	-ms-transition: background color 1.5s ease;
+  	transition: background color 1.5s ease;
+}
+
+.table {
+	border: thin solid #d1d0b8;
+	border-radius: 6px;
+	padding: 5px;
+	background: #ddddd7;
+	position: relative;
+	left: 5px;
+	margin: auto;
+	transform: skew(3deg, -.5deg);
+	-webkit-transform: skew(3deg, -.5deg);
+	-moz-transform: skew(3deg, -.5deg);
+	-o-transform: skew(3deg, -.5deg);
+	-ms-transform: skew(3deg, -.5deg);
+	box-shadow: -10px 15px 10px #888888;
+	margin-bottom: 35px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	text-align:center;
+	top: 15px;
+	display: inline-block;
+}
+
+.table h3, .table h2 {
+	padding: 0;
+	margin: 0 ;
+	text-align:center;
+}
+
+table {
+	background: white;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 5px auto;
+}
+
+td {
+    background: white;
+    font-weight:none;
+}
+
+td:first-child {
+	text-align:right;
+}
+
+td:last-child {
+	text-align: left;
+}
+
+tr:hover, tr:active {
+	font-weight: bold;
+}
+
+.back {
+	display: block;
+	margin: 10px auto;
+}
+
+#add input {
+	transition: width 1.5s ease;
+}
+
+#add input:focus {
+	width: 200px;
+}
+
+.spinner {
+  	margin: 10px auto;
+  	width: 70px;
+  	text-align: center;
+}
+
+.spinner > img {
+	margin: 50px 0;
+	transform: rotate(-90deg);
+	
+	-webkit-animation: rotate 1.5s infinite ease;
+	animation: rotate 1.5s infinite ease;
+	width:100px;
+
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rotate {
+    0% { -webkit-transform: rotate(0deg); }
+   100% { -webkit-transform: rotate(360deg); }
+}
+
+/* Standard syntax */
+@keyframes rotate {
+    0% { -webkit-transform: rotate(0deg); }
+   100% { -webkit-transform: rotate(360deg); }
+}
+
+
+
+/* Generic media query */
+
+@media screen 
+  and (min-width: 200px) 
+  and (max-width: 1000px) 
+{
+
+	body {
+		background: red;
+	}
+
+	h1 {
+		font-size: 3em;
+	}
+	main {
+		width: 90%;
+		background: white;
+
+	}
+
+	#content {
+		padding: 15px;
+	}
+
+	#dinnerplate {
+		float: none;
+		display: block;
+		position: static;
+		margin: 15px auto;
+		width: 40%;
+	}
+
+	#mainMenu {
+		width: 95%;
+		float: none;
+		display: block;
+		position: static;
+		margin: auto;
+		font-size: 1.6em;
+	}
+
+	button, select, input {
+		font-size: 1em;
+	}
+
+	select {
+		height: 50px;
+		min-width: 200px;
+	}
+
+
+	table, .table h3 {
+		font-size: 2em;
+	}
+
+	.back {
+		font-size: 1.5em;
+	}
+
+}
